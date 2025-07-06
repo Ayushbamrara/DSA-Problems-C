@@ -1,0 +1,65 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct node {
+    int data;
+    struct node *next;
+};
+
+struct node * insert_at_beg(struct node *h){
+    struct node *temp;
+    temp = (struct node*) malloc (sizeof(struct node));
+    if(temp == NULL){
+        printf("Memory not available \n");
+    } else{
+        printf("Enter a value : ");
+        scanf("%d", &temp->data);
+        temp->next = NULL;
+        temp->next = h;
+        h = temp;
+    }
+    return h;
+}
+
+struct node * insert_at_last (struct node *h){
+    struct node *temp;
+    temp = (struct node*)malloc(sizeof(struct node));
+    if(temp == NULL){
+        printf("Memory not available");
+    }
+    else if(h == NULL){
+        printf("Enter a value");
+        scanf("%d",&temp->data);
+        temp->next = NULL;
+        h =  temp;
+    }
+    else{
+        printf("Enter a value");
+        scanf("%d",&temp->data);
+        temp->next = NULL;
+        struct node *p1;
+        p1 = h;
+        while(p1->next != NULL){
+            p1 = p1->next;
+        }
+        p1->next=temp;
+        p1 = temp;
+    }
+    return h;
+}
+
+void display(struct node *t){
+    while(t != NULL){
+        printf("%d ", t->data);
+        t = t->next;
+    }
+}
+
+void main(){
+    struct node *head;
+    head = NULL;
+    head = insert_at_last(head);
+    head = insert_at_last(head);
+    head = insert_at_last(head);
+    display(head);
+}
+
