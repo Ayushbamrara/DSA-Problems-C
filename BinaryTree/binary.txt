@@ -1,0 +1,42 @@
+Print binary tree - 
+1. PreOrder - Root, Left ,Right
+2. PostOrder - Left, Right , Root
+3. InOrder - Left, Root, Right
+
+                        10
+
+                11              12
+
+            13      14      15      16
+
+1. PreOrder - 10, 11, 13, 14, 12, 15, 16
+2. PostOrder - 13,14,11,15,16,,12,10 
+3. InOrder - 13 11 14 15 12 16 10
+
+                                    11
+                                
+                        12                      13
+
+                   14        15             17         10
+
+                -1    -1    16  -1       -1     14
+
+1. PreOrder - 12,14,15,13,17,10,11
+2. PostOrder - 14,15,12,17,10,13,11
+3. InOrder - 13,11,14,10,15,16,12++
+
+
+
+                                    conecpt 2
+                                    
+PreOrder = F B A C E G I H  Root,Left,Right
+inorder = A B C D E F G H I   left root right
+
+                         F
+             (ABCDEF)        (GHI)
+                B               G
+           (A)    (CDEF)     
+            A       D        -1     I
+
+        -1  -1    C    E         H    -1        
+

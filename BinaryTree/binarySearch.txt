@@ -1,0 +1,1 @@
+it is a binary tree in which data is inserted in a particular pattern where the nodes having the key (value) less then that of root will be placed on the left side the key grater then the root will be placed in the right side.
