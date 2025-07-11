@@ -1,0 +1,17 @@
+                          AVL tree - (balanced trees)
+
+Are also knows as balanced trees, and where each nodes is balanced after insertion, the balancing is done
+according to a  balance factor that is {-1, 0, 1}.
+If the balance factor is not in range (imbalancing) in that case we use rotation to balance the tree.
+
+4 types of avl tree - 
+
+1. Left Rotation
+2. Right Rotation
+3. Left-Right Rotation
+4. Right-Left Rotation
+
+
+
+
+

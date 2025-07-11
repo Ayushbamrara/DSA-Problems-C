@@ -1,0 +1,24 @@
+Binary Tree - It is a binary tree in which data is inserted in a particular pattern where the nodes having the 
+key (value) less then that of root will be placed on the left side the key grater then the root 
+will be placed in the right side.
+
+Properties of BST - 
+1. The nodes which are less then the root node is on left side and grater on right side .
+2. If you find out the inorder traversal of any Binary Search Tree (BST), it will always give you the nodes in sorted (ascending) order.
+
+
+
+givern : PostOrder - 20, 40 , 30, 60 , 80, 70, 50   (left, right, root)
+create binary tree - 
+ ->  inorder will be  - 20, 30, 40, 50, 60, 70, 80 
+
+                                        5
+                         (20 30 40)             (60 70 80)
+                         30                         70
+
+                    20      40                    60     80
+
+
+post order - A B C D E F 
+
+                                

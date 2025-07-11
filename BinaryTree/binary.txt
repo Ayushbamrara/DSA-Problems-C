@@ -1,7 +1,7 @@
 Print binary tree - 
 1. PreOrder - Root, Left ,Right
 2. PostOrder - Left, Right , Root
-3. InOrder - Left, Root, Right
+3. InOrder - Left, Root, Right 
 
                         10
 

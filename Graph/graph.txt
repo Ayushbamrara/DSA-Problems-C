@@ -1,0 +1,123 @@
+Graph - Non linear data structure consisting of vertices and edges , the vertices are also reffered as nodes and
+the edge  are line or arc that conncet any two nodes in the graph.
+so we can denote graph of - G(V,E)
+
+Component of graph - 
+1. vertices
+2. edge
+
+vertices - fundamental unit of graph also known as nodes can be labelled or un labelled.
+edge - used to connect two nodes of a graph cna be weighted or unweighted.
+
+Types of graph -
+1. Null graph  - a graph is null if there is no edge in the graph.
+
+2. Undirected graph - Where there is no direction of edges then its undirected graph.
+
+3. Directed graph - Graph where there is direction of edges in the graph.
+
+4. Trivial graph - When a graph is having only 1 vertex.
+
+5. Connected Graph - A graph in which all the nodes are connected such that we can visit from one node to another node.
+
+6. Disconnected Graph - A graph in which atleast is one node is unreachable is known as disconnected graph.
+
+7. Complete graph - A graph in which all nodes are directly connected to each other.
+
+8. cyclic graph - A graph containing at least one cycle is called cyclic graph.
+
+9. Regular graph -  A graph in which the degree of every vertex is equals to  k.  (k = number of degree). 
+                    - all nodes should have same degree
+
+10. Weighted graph - 
+
+
+
+Representation of graph - 
+
+1. Adjacency Matrix - 
+
+for UnDirected graph A,B,C,D
+
+                A-----------B 
+                |           |
+                |           |
+                C-----------D
+
+
+    1   2   3   4
+1   0   1   1   1
+2   1   0   1   1
+3   1   1   0   1
+4   
+
+
+2. Adjacency List - 
+
+for UnDirected graph A,B,C,D
+                1-----------2 
+                |           |
+                |           |
+                3---------- 4
+
+1 ->2->3
+2->4->1
+3->1->4
+4->3->2
+
+Difference between tree and graph 
+ 
+1. A graph is DS with less no. of consdition then the trees.
+2. Every Tree can be a graph but any graph cannot be a tree.
+
+Application of graph - 
+1.Social media 
+2.Navigation system 
+3.Neural network  
+4.Communication system 
+5.Finding the shortest path in robotic system 
+
+Traversal of graph - 
+1.BFS (Breath first search)  - Uses Queue
+2.DFS (Depth first search)  - Uses Stack
+
+
+
+               --------------------------  Spanning Tree ---------------------
+
+Spanning Tree is a subset of graph such that all the vertices are connected using minimum no. of edges and it should
+not contain any cycle.
+A graph may have more than one spanning tree.
+
+Properties - 
+1. It does not exist for disconnected graph.
+2. For a connected graph the edges are node-1.
+3. A spanning tree does not have any cycle.
+4. The number of combination are calculated cayley's formula
+            N O C = N ^ N-2
+
+---------- Applications ------------------
+Finding shortest path between nodes.
+Building telicommunication network.
+Building Routeing protocol.
+Navigation Systems.
+
+
+-----------------Minimum Spanning Tree ----------------------------
+A minimum spanning tre is a spannig tree that have minimum weigth amoung all possible spanning trees.\
+
+-------------- properties ------------------------
+1. It connect all the nodes.
+2. Its is Acyclic.
+3. edges = vertex-1;
+4. Should have minimum weights.
+
+1. Krushkal's Algorithm
+problem - if graph converted into MST then the no. of nodes are disconnected.
+to resolve this issue prism Algorithm come into picture.
+
+2.Prim's Algorithm
+
+It is an algorithm just like  Krushkal's Algorithm it always start with a single node and move through the several adjacent nodes
+the main idea is to maintain the connection between two sets of vertices.
+It also checks if there is no cycle and the weights are as minimum as possible.
